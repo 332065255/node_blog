@@ -3,6 +3,10 @@ var app = express();
 console.log(__dirname)
 app.use(express.static('www'));
 app.get('/', function(req, res) {
+    res.redirect(302, '/home');
+
+})
+app.get('/home', function(req, res) {
     res.sendfile("./www/index.html")
 })
 app.get('/login', function(req, res) {

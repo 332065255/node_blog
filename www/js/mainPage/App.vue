@@ -1,3 +1,30 @@
+<template>
+            <div class='main'>
+                <div class='page_left'>
+                    <div class='header'>
+                        <h1>{{name}}</h1>
+                        <h3>xxxxxxxxxxxxx</h3>
+                    </div>
+                    <div class='menu'>
+                        <ul>
+                            <li><a>Home</a></li>
+                            <li><a>about</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='page_right'></div>
+            </div>
+</template>
+<script>
+    export default {
+        data(){
+            return {
+                name:"高大魔王的博客111"
+            }
+        }
+    }
+</script>
+<style>
 .main {
     width: 100%;
     height: 100%;
@@ -56,3 +83,4 @@
     padding: 15px;
     box-sizing: border-box;
 }
+</style>

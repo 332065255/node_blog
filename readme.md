@@ -1,4 +1,4 @@
-react+node 开发一个测试博客
+vue+node 开发一个测试博客
 
 npm install
 
