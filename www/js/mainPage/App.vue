@@ -7,12 +7,14 @@
                     </div>
                     <div class='menu'>
                         <ul>
-                            <li><a>Home</a></li>
-                            <li><a>about</a></li>
+                            <li><router-link to="/list">Home</router-link></li>
+                            <li><router-link to="/about">about</router-link></li>
                         </ul>
                     </div>
                 </div>
-                <div class='page_right'></div>
+                <div class='page_right'>
+                    <router-view></router-view>
+                </div>
             </div>
 </template>
 <script>
@@ -72,6 +74,7 @@
 
 .page_left .menu ul li a {
     cursor: pointer;
+    text-decoration: none;
 }
 
 .page_right {
