@@ -4,12 +4,14 @@ import vue from 'vue';
 import list from './list.vue'
 import about from './about.vue'
 import resource from 'vue-resource';
+import detail from './detail.vue';
 vue.use(resource);
 vue.use(vueRouter);
 const routes = [
     // { path: '/', redirect: '/list' },
     { path: '/list', component: list },
     { path: '/about', component: about },
+    {path:'/detail/:ids',component:detail}
 ]
 const router = new vueRouter({
     routes // （缩写）相当于 routes: routes

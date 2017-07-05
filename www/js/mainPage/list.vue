@@ -1,5 +1,7 @@
 <template>
     <div class="main_list">
+        <span>我的博客文章</span>
+       
         <elements v-for="detail in listArr" v-bind:detail="detail">
         </elements>
         <!--<elements ></elements>-->
@@ -36,9 +38,16 @@ export default  {
     }
 }
 </script>
-<style>
+<style scoped>
 .main_list{
-
+    height: 100%;
+    overflow-y:scroll;
+}
+.main_list span{
+    font-size: 18px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: block
 }
 .main_list ul li{
     display: block;

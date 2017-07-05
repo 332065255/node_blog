@@ -83,7 +83,7 @@
     right: 0px;
     height: 100%;
     float: left;
-    padding: 15px;
+    padding: 15px 0px 15px 15px;
     box-sizing: border-box;
 }
 </style>
