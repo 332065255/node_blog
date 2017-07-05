@@ -17,3 +17,4 @@ body {
     height: 100%;
     width: 100%;
 }
+.clear:after {clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}
