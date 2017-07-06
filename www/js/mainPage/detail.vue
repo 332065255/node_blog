@@ -9,13 +9,13 @@ export default  {
         return {}
     },
     mounted:function(){
-        // this.$http.get('/detail?id='+this.$route.params.id).then(function(res){
-        //     console.log(res);
-        //     this.listArr=res.body;
-        // },function(res){
-        //     console.log(res);
-        // })
-        console.log(this.$route.params.ids)
+        this.$http.get('/detail?id='+this.$route.params.ids).then(function(res){
+            console.log(res);
+            // this.listArr=res.body;
+        },function(res){
+            console.log(res);
+        })
+        // console.log(this.$route.params.ids)
     },
 }
 </script>
