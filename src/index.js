@@ -3,9 +3,11 @@ var app = express();
 var mainpage=require('./mainpage/index');
 console.log(__dirname)
 
-mainpage(app);
+
 app.use(express.static('www'));
+app.use('/list',mainpage.mainApp);   //路由
 app.get('/', function(req, res) {
+    
     res.redirect(302, '/home');
 
 })

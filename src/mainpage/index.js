@@ -1,7 +1,9 @@
 var list=require('./list');
+var express=require('express');
+var app=express();
+module.exports.mainApp=app;
 
-module.exports=function(app){
-    app.get('/list',function(req,res){
-        res.send(JSON.stringify(list.getList()));
-    })
-}
+
+app.get('/',function(req,res){
+    res.send(JSON.stringify(list.getList()));
+})
