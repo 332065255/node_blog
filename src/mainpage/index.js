@@ -5,5 +5,6 @@ module.exports.mainApp=app;
 
 
 app.get('/',function(req,res){
+    console.log(req.cookies);
     res.send(JSON.stringify(list.getList()));
 })
